@@ -1,0 +1,363 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #ebe4e4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logoButt {
+  color: #fffbd3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: x-large; */
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+}
+.logoButt img {
+  width: 10vh;
+}
+
+.Sidebar {
+  min-width: 35vh;
+  width: fit-content;
+  height: fit-content;
+  min-height: 100%;
+  background-color: #393d3f;
+}
+
+.SidebarList {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  padding-top: 50px;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.SidebarList .row:hover {
+  background-color: #2d2f30;
+  cursor: pointer;
+}
+
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.row #title {
+  flex: 70%;
+}
+
+#homeContainer {
+  background-color: #ebe4e4;
+}
+.notice h1 {
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.notice {
+  min-width: 70vw;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 5vh;
+}
+
+.notice p {
+  font-size: xx-large;
+  margin-bottom: 1%;
+  margin-left: 32px;
+}
+.notice p span {
+  color: rgb(225, 0, 0);
+  text-decoration: underline;
+}
+.notice ul {
+  list-style: square inside;
+  margin-top: 2%;
+}
+
+.mainService {
+  /* min-width: 80vw; */
+  margin-left: 3%;
+  margin-right: 2%;
+}
+.services {
+  display: inline-flex;
+  margin-top: 3%;
+  justify-content: center;
+  min-width: 70vw;
+  text-align: center;
+}
+.serviceDiv {
+  text-align: center;
+}
+
+.specsDiv {
+  border-radius: 20px;
+  min-width: 10%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  text-align: center;
+}
+.specsDiv h4 {
+  margin-top: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+}
+
+.userBar {
+  margin-top: 50%;
+  text-align: center;
+  color: #fffbd3;
+}
+
+.userBar button {
+  color: rgb(0, 208, 255);
+  border: 1px solid rgb(0, 208, 255);
+  padding: 7px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #393d3f;
+}
+.userBar button:hover {
+  background-color: rgb(0, 208, 255);
+  color: black;
+  cursor: pointer;
+}
+.logBack {
+  background-color: #2d2f30;
+  min-width: 100%;
+  display: flex;
+  text-align: center;
+  height: fit-content;
+  min-height: 100%;
+}
+.logBack #logleftlogo {
+  margin: auto;
+}
+.logBack img {
+  width: 40vh;
+}
+#logDiv {
+  background-color: rgb(248, 239, 228);
+  min-width: 80vh;
+  width: fit-content;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+#logDiv form {
+  margin: auto;
+  font-size: larger;
+  text-align: center;
+}
+#logDiv form h1 {
+  margin: 8%;
+  font-weight: 1000;
+}
+#logDiv img {
+  width: 10vh;
+  margin: auto;
+}
+#logItem {
+  margin-bottom: 5%;
+}
+#logItem input {
+  border-radius: 5px;
+  width: 20vw;
+  height: 3vw;
+  font-size: large;
+}
+#logDiv form #belButt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#belButt p{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#logDiv form button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  /* min-width: 50%; */
+  white-space: nowrap;
+  font-size: 80%;
+  margin: 2%;
+  font-size: large;
+}
+#logDiv form button:hover {
+  background-color: #2d2f30;
+  color: rgb(248, 239, 228);
+  cursor: pointer;
+}
+
+.profile {
+  /* min-width: 65vh;
+  width: fit-content; */
+  width: 100%;
+  background-color: #ebe4e4;
+}
+.profTable {
+  margin-left: 5%;
+  margin-right: 5%;
+  min-width: fit-content;
+  width: 150vh;
+  margin-top: 5%;
+  justify-content: center;
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(224, 216, 207);
+}
+.profTable th {
+  background-color: #688499;
+  padding: 0.7%;
+}
+.profTable td {
+  border: 1px solid black;
+  padding: 0.5%;
+}
+
+.timesheetDiv {
+  display: block;
+  min-width: fit-content;
+  width: 85%;
+}
+.addEvent {
+  display: inline-block;
+  min-width: fit-content;
+  width: 85%;
+}
+.addEvent #addEventItems {
+  margin-left: 30vh;
+  margin-right: 10vh;
+  margin-top: 4%;
+}
+.addEvent #addEventItems input {
+  width: 60vh;
+  margin: 10px;
+}
+.add-task {
+  border: 1px solid #73abb9;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1px 1px 1px 1px;
+  background-color: #73abb9;
+}
+.add-task:hover {
+  background-color: #80bdcd;
+}
+.nav-link {
+  color: black;
+}
+.nav-link:hover {
+  color: black;
+}
+
+/* Expense Table CSS */
+
+.expense-container {
+  position: relative;
+  margin: auto;
+}
+
+#mainheading {
+  color: #0a0a0b;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration-line: underline;
+}
+#subheading {
+  color: #0a0a0b;
+  margin-left: 20px;
+  font-size: x-large;
+  border: #0a0a0b;
+}
+
+/* ExpenseForm styles */
+.modal-overlay {
+  background: rgba(10, 10, 11, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.form-container {
+  background-color: #fdfdff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ExpensFormCont form {
+  padding: 20px;
+}
+
+
+#aryabutton {
+  margin-left: 20px;
+  padding: 12px;
+  background-color: #546a7b;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#aryabutton:hover {
+  background-color: #2685ce;
+}
+
+
+.cancel-button {
+  background-color: #c6c5b9;
+  color: #0a0a0b;
+  margin-right: 12px;
+}
+
+.cancel-button:hover {
+  background-color: #aaaaaa;
+}

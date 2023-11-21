@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+.content-div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(15, 232, 0, 0.945),
+    hsla(71, 100%, 50%, 0.8)
+  ) !important;
+}
+
+/* Common styles for both forms (LeaveForm) */
+
+/* body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles specific to LeaveForm.js */
+
+.leave-form {
+  text-align: center;
+}
+
+/* .leave-form h1 {
+  color: #ddd;
+} */
+
+.leave-form-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.leave-form-table th,
+.leave-form-table td {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+  text-align: left;
+  border: 0px;
+  color: #ddd;
+}
+
+/* .leave-form-table th {
+  background-color: #4caf50;
+  color: #fff;
+} */
+
+/* .leave-form-button {
+  background-color: #546a7b;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+} */
+
+.leave-form-button:hover {
+  background-color: #2685ce;
+}
+
+.status {
+  margin-top: 20px;
+}
+
+.status p {
+  font-size: 16px;
+  margin-bottom: -15px;
+}
+
+.status.pending {
+  color: #ff9800;
+}
+
+.status.accepted {
+  color: #4caf50;
+}
+
+.status.rejected {
+  color: #f44336;
+}
+
+/* Add these styles to your existing style.css file */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 92vh; /* 100% of the viewport height */
+  margin: auto;
+  background-color: #333;
+}
+.container h1{
+  margin-bottom: -15px;
+  color: #ddd;
+}
+
+.leave-form {
+  width: 100%;
+  max-width: 400px; /* Set a max width if needed */
+}
+
+/* .leave-form-table {
+  width: 100%;
+} */
+
+.leave-form-input,
+.leave-form-select,
+.leave-form-textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+.leave-form-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #546a7b;;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add any additional styling as needed */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the ViewForms component */
+.view-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.view-form-table {
+  width: 80%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdfbfb;
+}
+
+.view-form-table th,
+.view-form-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.view-form-table th {
+  background-color: #0f0101;
+  color: white;
+}
+
+.view-form-actions {
+  margin-top: 20px;
+}
+
+.view-form-accept {
+  padding: 12px;
+  background-color: #64c067;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-form-decline {
+  padding: 12px;
+  background-color: #e65248;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-form-accept:hover {
+  background-color: #64c067;
+}
+
+.view-form-decline:hover {
+  background-color: #e65248;
+}
